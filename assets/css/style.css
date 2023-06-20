@@ -1,0 +1,386 @@
+/*=== abstracts css start === */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+/*===// end of abstracts css === */
+/*=== base css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  background: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .w-md-50 {
+    width: 50%;
+  }
+}
+/*===// end of base css === */
+/*=== layouts css start === */
+/*===// end of layouts css === */
+/*=== components css start === */
+.inner-smaller-top {
+  min-height: 230px;
+}
+.inner-smaller-top .topper .small-pond {
+  border: 4px solid #333;
+  min-height: 230px;
+  width: 385px;
+  position: relative;
+}
+.inner-smaller-top .topper .small-pond .label-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #186583;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner-smaller-top .topper .small-pond .left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.inner-smaller-top .topper .small-pond .top {
+  position: absolute;
+  display: inline-block;
+  top: -110px;
+  left: 190px;
+  transform: rotate(270deg);
+}
+.inner-smaller-top .topper .small-pond .bottom {
+  position: absolute;
+  bottom: -62px;
+  left: 140px;
+  transform: rotate(270deg);
+}
+.inner-smaller-top .topper .small-pond::after {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  right: 0;
+  bottom: -25px;
+  background: #ffffff;
+}
+
+.boat-tracker-map {
+  max-width: 1280px;
+  margin: auto;
+  min-height: 1320px;
+}
+.boat-tracker-map .all-wrappr {
+  transform: rotate(27deg);
+  transform-origin: 24% 200%;
+}
+@media (min-width: 1600px) {
+  .boat-tracker-map .all-wrappr {
+    transform: rotate(27deg) translateX(100px);
+  }
+}
+@media (max-width: 1450px) {
+  .boat-tracker-map {
+    max-width: 1200px;
+  }
+}
+
+.main-blocs {
+  position: relative;
+}
+.main-blocs .terminal-one {
+  position: absolute;
+  left: 11%;
+}
+.main-blocs .terminal-one .wrapper {
+  background: #186583;
+  border: 1px solid #1aaf5d;
+  width: 10px;
+  height: 700px;
+  position: relative;
+}
+.main-blocs .terminal-one .wrapper .right-side,
+.main-blocs .terminal-one .wrapper .left-side {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.main-blocs .terminal-one .wrapper .right-side span,
+.main-blocs .terminal-one .wrapper .left-side span {
+  padding-inline: 3px;
+}
+.main-blocs .terminal-one .wrapper .left-side {
+  left: -60px;
+}
+.main-blocs .terminal-one .wrapper .right-side {
+  right: -60px;
+}
+.main-blocs .terminal-one .wrapper .label-t {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #186583;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-blocs .terminal-two {
+  position: absolute;
+  left: 27%;
+}
+.main-blocs .terminal-two .wrapper {
+  background: #186583;
+  border: 1px solid #1aaf5d;
+  width: 10px;
+  height: 600px;
+  position: relative;
+}
+.main-blocs .terminal-two .wrapper .right-side,
+.main-blocs .terminal-two .wrapper .left-side {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.main-blocs .terminal-two .wrapper .right-side span,
+.main-blocs .terminal-two .wrapper .left-side span {
+  padding-inline: 3px;
+}
+.main-blocs .terminal-two .wrapper .left-side {
+  left: -60px;
+}
+.main-blocs .terminal-two .wrapper .right-side {
+  right: -60px;
+}
+.main-blocs .terminal-three {
+  position: absolute;
+  left: 45%;
+}
+.main-blocs .terminal-three .wrapper {
+  background: #186583;
+  border: 1px solid #1aaf5d;
+  width: 10px;
+  height: 560px;
+  position: relative;
+}
+.main-blocs .terminal-three .wrapper .right-side,
+.main-blocs .terminal-three .wrapper .left-side {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.main-blocs .terminal-three .wrapper .right-side span,
+.main-blocs .terminal-three .wrapper .left-side span {
+  padding-inline: 3px;
+}
+.main-blocs .terminal-three .wrapper .left-side {
+  left: -60px;
+}
+.main-blocs .terminal-three .wrapper .right-side {
+  right: -60px;
+}
+.main-blocs .terminal-four {
+  position: absolute;
+  left: 60%;
+}
+.main-blocs .terminal-four .smalll {
+  font-size: 10px;
+}
+.main-blocs .terminal-four .wrapper {
+  background: #186583;
+  border: 1px solid #1aaf5d;
+  width: 10px;
+  height: 660px;
+  position: relative;
+}
+.main-blocs .terminal-four .wrapper .right-side,
+.main-blocs .terminal-four .wrapper .left-side {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.main-blocs .terminal-four .wrapper .right-side span,
+.main-blocs .terminal-four .wrapper .left-side span {
+  padding-inline: 3px;
+}
+.main-blocs .terminal-four .wrapper .left-side {
+  left: -60px;
+}
+.main-blocs .terminal-four .wrapper .right-side {
+  right: -60px;
+}
+.main-blocs .terminal-five {
+  position: absolute;
+  left: 78%;
+  top: -5px;
+}
+.main-blocs .terminal-five .wrapper {
+  background: #186583;
+  border: 1px solid #1aaf5d;
+  width: 10px;
+  height: 780px;
+  position: relative;
+  transform: rotate(10deg);
+}
+.main-blocs .terminal-five .wrapper .right-side,
+.main-blocs .terminal-five .wrapper .left-side {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.main-blocs .terminal-five .wrapper .right-side span,
+.main-blocs .terminal-five .wrapper .left-side span {
+  padding-inline: 3px;
+}
+.main-blocs .terminal-five .wrapper .left-side {
+  padding-top: 15px;
+  left: -60px;
+}
+.main-blocs .terminal-five .wrapper .right-side {
+  right: -60px;
+}
+.main-blocs .label-t {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #186583;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-blocs .terminal-right-end {
+  position: absolute;
+  left: 91%;
+  top: -25px;
+}
+.main-blocs .terminal-right-end .wrapper {
+  background: #186583;
+  border: 1px solid #1aaf5d;
+  width: 10px;
+  height: 990px;
+  position: relative;
+  transform: rotate(13deg);
+}
+.main-blocs .terminal-right-end .wrapper .right-side,
+.main-blocs .terminal-right-end .wrapper .left-side {
+  padding-top: 40px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+}
+.main-blocs .terminal-right-end .wrapper .right-side span,
+.main-blocs .terminal-right-end .wrapper .left-side span {
+  padding-inline: 3px;
+}
+.main-blocs .terminal-right-end .wrapper .left-side {
+  left: -60px;
+}
+.main-blocs .terminal-right-end .wrapper .right-side {
+  right: -46px;
+}
+.main-blocs .terminal-right-end .wrapper .bottom-flat {
+  position: absolute;
+  background: #186583;
+  border: 1px solid #1aaf5d;
+  height: 10px;
+  width: 760px;
+  right: 70px;
+  bottom: -150px;
+  transform: rotate(-13deg) translateX(40px);
+  transform-origin: 29% 20%;
+}
+.main-blocs .terminal-right-end .wrapper .bottom-flat .boats {
+  position: relative;
+}
+.main-blocs .terminal-right-end .wrapper .bottom-flat .boats .uppers-side {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  transform: rotate(270deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main-blocs .terminal-right-end .wrapper .bottom-flat .boats::after {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 60px;
+  bottom: -9px;
+  right: -50px;
+  background: #186583;
+  border: 1px solid #1aaf5d;
+}
+.main-blocs .terminal-right-end .wrapper .bottom-flat .boats .box-ax {
+  position: absolute;
+  left: -80px;
+  bottom: -9px;
+  min-height: 80px;
+  min-width: 80px;
+  border: 10px solid #186583;
+}
+
+.slot {
+  background: #01ff4d;
+  border: 1px solid #fdcf03;
+  min-width: 59px;
+  max-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slot span {
+  font-size: 11px;
+}
+.slot.occupied {
+  color: #fff;
+  background: #eb0606;
+}
+
+/*===// end of components css === *//*# sourceMappingURL=style.css.map */
