@@ -370,6 +370,18 @@
             }
         }
 
+        .de {
+            position: absolute;
+            left: calc(60% + 120px);
+            top: -10px;
+            transform: rotate(270deg);
+
+            @media(max-width:1199px) {
+                left: calc(60% + 90px);
+
+            }
+        }
+
         .label-t {
             position: absolute;
             bottom: -35px;
