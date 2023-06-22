@@ -157,6 +157,17 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1199px) {
+  .main-blocs .terminal-one .wrapper {
+    height: 400px;
+  }
+  .main-blocs .terminal-one .wrapper .left-side {
+    left: -21px;
+  }
+  .main-blocs .terminal-one .wrapper .right-side {
+    right: -21px;
+  }
+}
 .main-blocs .terminal-two {
   position: absolute;
   left: 27%;
@@ -185,6 +196,17 @@ body {
 }
 .main-blocs .terminal-two .wrapper .right-side {
   right: -60px;
+}
+@media (max-width: 1199px) {
+  .main-blocs .terminal-two .wrapper {
+    height: 380px;
+  }
+  .main-blocs .terminal-two .wrapper .left-side {
+    left: -21px;
+  }
+  .main-blocs .terminal-two .wrapper .right-side {
+    right: -21px;
+  }
 }
 .main-blocs .terminal-three {
   position: absolute;
@@ -215,12 +237,28 @@ body {
 .main-blocs .terminal-three .wrapper .right-side {
   right: -60px;
 }
+@media (max-width: 1199px) {
+  .main-blocs .terminal-three .wrapper {
+    height: 350px;
+  }
+  .main-blocs .terminal-three .wrapper .left-side {
+    left: -21px;
+  }
+  .main-blocs .terminal-three .wrapper .right-side {
+    right: -21px;
+  }
+}
 .main-blocs .terminal-four {
   position: absolute;
   left: 60%;
 }
 .main-blocs .terminal-four .smalll {
   font-size: 10px;
+}
+@media (max-width: 1199px) {
+  .main-blocs .terminal-four .smalll {
+    font-size: 5px;
+  }
 }
 .main-blocs .terminal-four .wrapper {
   background: #186583;
@@ -246,6 +284,17 @@ body {
 }
 .main-blocs .terminal-four .wrapper .right-side {
   right: -60px;
+}
+@media (max-width: 1199px) {
+  .main-blocs .terminal-four .wrapper {
+    height: 400px;
+  }
+  .main-blocs .terminal-four .wrapper .left-side {
+    left: -21px;
+  }
+  .main-blocs .terminal-four .wrapper .right-side {
+    right: -21px;
+  }
 }
 .main-blocs .terminal-five {
   position: absolute;
@@ -278,6 +327,17 @@ body {
 }
 .main-blocs .terminal-five .wrapper .right-side {
   right: -60px;
+}
+@media (max-width: 1199px) {
+  .main-blocs .terminal-five .wrapper {
+    height: 420px;
+  }
+  .main-blocs .terminal-five .wrapper .left-side {
+    left: -21px;
+  }
+  .main-blocs .terminal-five .wrapper .right-side {
+    right: -21px;
+  }
 }
 .main-blocs .label-t {
   position: absolute;
@@ -365,6 +425,17 @@ body {
   min-width: 80px;
   border: 10px solid #186583;
 }
+@media (max-width: 1199px) {
+  .main-blocs .terminal-right-end .wrapper {
+    height: 700px;
+  }
+  .main-blocs .terminal-right-end .wrapper .left-side {
+    left: -21px;
+  }
+  .main-blocs .terminal-right-end .wrapper .right-side {
+    right: -21px;
+  }
+}
 
 .slot {
   background: #01ff4d;
@@ -381,6 +452,17 @@ body {
 .slot.occupied {
   color: #fff;
   background: #eb0606;
+}
+@media (max-width: 1199px) {
+  .slot {
+    min-width: 20px;
+    max-width: 21px;
+    border: 1px solid #fdcf03;
+    border-bottom: 1px solid #fdcf03;
+  }
+  .slot span {
+    font-size: 6px;
+  }
 }
 
 /*===// end of components css === *//*# sourceMappingURL=style.css.map */

@@ -92,6 +92,7 @@
             height: 700px;
             position: relative;
 
+
             .right-side,
             .left-side {
                 position: absolute;
@@ -126,6 +127,19 @@
                 align-items: center;
                 justify-content: center;
             }
+
+            @media(max-width:1199px) {
+                height: 400px;
+
+                .left-side {
+                    left: -21px;
+                }
+
+                .right-side {
+                    right: -21px;
+                }
+
+            }
         }
     }
 
@@ -159,6 +173,19 @@
 
             .right-side {
                 right: -60px;
+            }
+
+            @media(max-width:1199px) {
+                height: 380px;
+
+                .left-side {
+                    left: -21px;
+                }
+
+                .right-side {
+                    right: -21px;
+                }
+
             }
         }
     }
@@ -195,7 +222,18 @@
                 right: -60px;
             }
 
+            @media(max-width:1199px) {
+                height: 350px;
 
+                .left-side {
+                    left: -21px;
+                }
+
+                .right-side {
+                    right: -21px;
+                }
+
+            }
         }
     }
 
@@ -205,6 +243,10 @@
 
         .smalll {
             font-size: 10px;
+
+            @media(max-width:1199px) {
+                font-size: 5px;
+            }
         }
 
 
@@ -236,6 +278,18 @@
                 right: -60px;
             }
 
+            @media(max-width:1199px) {
+                height: 400px;
+
+                .left-side {
+                    left: -21px;
+                }
+
+                .right-side {
+                    right: -21px;
+                }
+
+            }
 
         }
     }
@@ -275,6 +329,18 @@
                 right: -60px;
             }
 
+            @media(max-width:1199px) {
+                height: 420px;
+
+                .left-side {
+                    left: -21px;
+                }
+
+                .right-side {
+                    right: -21px;
+                }
+
+            }
 
         }
     }
@@ -373,6 +439,19 @@
                     }
                 }
             }
+
+            @media(max-width:1199px) {
+                height: 700px;
+
+                .left-side {
+                    left: -21px;
+                }
+
+                .right-side {
+                    right: -21px;
+                }
+
+            }
         }
     }
 }
@@ -393,5 +472,16 @@
     &.occupied {
         color: #fff;
         background: #eb0606;
+    }
+
+    @media(max-width:1199px) {
+        min-width: 20px;
+        max-width: 21px;
+        border: 1px solid #fdcf03;
+        border-bottom: 1px solid #fdcf03;
+
+        span {
+            font-size: 6px;
+        }
     }
 }
