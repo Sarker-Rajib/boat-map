@@ -132,6 +132,11 @@ body {
   transform: rotate(27deg);
   transform-origin: 24% 200%;
 }
+@media (min-width: 1200px) {
+  .main-wrapper-all .boat-tracker-map .all-wrappr {
+    transform: rotate(27deg) translateX(60px);
+  }
+}
 @media (min-width: 1600px) {
   .main-wrapper-all .boat-tracker-map .all-wrappr {
     transform: rotate(27deg) translateX(100px);

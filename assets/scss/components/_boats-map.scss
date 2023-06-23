@@ -102,6 +102,10 @@
             transform: rotate(27deg);
             transform-origin: 24% 200%;
 
+            @media(min-width: 1200px) {
+                transform: rotate(27deg) translateX(60px);
+            }
+
             @media(min-width: 1600px) {
                 transform: rotate(27deg) translateX(100px);
             }
