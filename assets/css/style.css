@@ -134,7 +134,7 @@ body {
 }
 @media (min-width: 1200px) {
   .main-wrapper-all .boat-tracker-map .all-wrappr {
-    transform: rotate(27deg) translateX(60px);
+    transform: rotate(27deg) translateX(70px);
   }
 }
 @media (min-width: 1600px) {
@@ -153,6 +153,7 @@ body {
 .main-wrapper-all .main-blocs .terminal-one {
   position: absolute;
   left: 11%;
+  z-index: 999;
 }
 @media (max-width: 1199px) {
   .main-wrapper-all .main-blocs .terminal-one {
@@ -211,6 +212,7 @@ body {
 .main-wrapper-all .main-blocs .terminal-two {
   position: absolute;
   left: 27%;
+  z-index: 999;
 }
 .main-wrapper-all .main-blocs .terminal-two .wrapper {
   background: #186583;
@@ -251,6 +253,7 @@ body {
 .main-wrapper-all .main-blocs .terminal-three {
   position: absolute;
   left: 45%;
+  z-index: 999;
 }
 .main-wrapper-all .main-blocs .terminal-three .wrapper {
   background: #186583;
@@ -291,6 +294,7 @@ body {
 .main-wrapper-all .main-blocs .terminal-four {
   position: absolute;
   left: 60%;
+  z-index: 999;
 }
 .main-wrapper-all .main-blocs .terminal-four .smalll {
   font-size: 10px;
@@ -340,6 +344,7 @@ body {
   position: absolute;
   left: 78%;
   top: -5px;
+  z-index: 999;
 }
 .main-wrapper-all .main-blocs .terminal-five .wrapper {
   background: #186583;
@@ -381,6 +386,7 @@ body {
 }
 .main-wrapper-all .main-blocs .de {
   position: absolute;
+  z-index: 999;
   left: calc(60% + 120px);
   top: -16px;
   transform: rotate(270deg);
@@ -407,6 +413,7 @@ body {
   position: absolute;
   left: 90.5%;
   top: -14px;
+  z-index: 999;
 }
 @media (max-width: 1199px) {
   .main-wrapper-all .main-blocs .terminal-right-end {
@@ -463,8 +470,8 @@ body {
 }
 .main-wrapper-all .main-blocs .terminal-right-end .wrapper .bottom-flat .boats .uppers-side {
   position: absolute;
-  bottom: 30px;
-  width: 100%;
+  top: -383px;
+  right: 360px;
   transform: rotate(270deg);
   display: flex;
   flex-direction: column;
@@ -472,8 +479,8 @@ body {
 }
 @media (max-width: 1199px) {
   .main-wrapper-all .main-blocs .terminal-right-end .wrapper .bottom-flat .boats .uppers-side {
-    bottom: 4px;
-    left: 10px;
+    top: -250px;
+    right: 220px;
   }
   .main-wrapper-all .main-blocs .terminal-right-end .wrapper .bottom-flat .boats .uppers-side .slot {
     margin-bottom: 1.5px;
@@ -521,6 +528,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .main-wrapper-all .slot span {
   font-size: 11px;
@@ -528,6 +536,9 @@ body {
 .main-wrapper-all .slot.occupied {
   color: #fff;
   background: #eb0606;
+}
+.main-wrapper-all .slot:hover {
+  background: gray;
 }
 @media (max-width: 1199px) {
   .main-wrapper-all .slot {

@@ -103,12 +103,13 @@
             transform-origin: 24% 200%;
 
             @media(min-width: 1200px) {
-                transform: rotate(27deg) translateX(60px);
+                transform: rotate(27deg) translateX(70px);
             }
 
             @media(min-width: 1600px) {
                 transform: rotate(27deg) translateX(100px);
             }
+
         }
 
         @media(max-width: 1450px) {
@@ -122,6 +123,7 @@
         .terminal-one {
             position: absolute;
             left: 11%;
+            z-index: 999;
 
             @media(max-width:1199px) {
                 left: 12%;
@@ -188,6 +190,7 @@
         .terminal-two {
             position: absolute;
             left: 27%;
+            z-index: 999;
 
             .wrapper {
                 background: #186583;
@@ -235,6 +238,7 @@
         .terminal-three {
             position: absolute;
             left: 45%;
+            z-index: 999;
 
             .wrapper {
                 background: #186583;
@@ -282,6 +286,7 @@
         .terminal-four {
             position: absolute;
             left: 60%;
+            z-index: 999;
 
             .smalll {
                 font-size: 10px;
@@ -340,6 +345,7 @@
             position: absolute;
             left: 78%;
             top: -5px;
+            z-index: 999;
 
             .wrapper {
                 background: #186583;
@@ -389,6 +395,7 @@
 
         .de {
             position: absolute;
+            z-index: 999;
             left: calc(60% + 120px);
             top: -16px;
             transform: rotate(270deg);
@@ -416,6 +423,7 @@
             position: absolute;
             left: 90.5%;
             top: -14px;
+            z-index: 999;
 
             @media(max-width:1199px) {
                 left: 89%;
@@ -473,16 +481,16 @@
 
                         .uppers-side {
                             position: absolute;
-                            bottom: 30px;
-                            width: 100%;
+                            top: -383px;
+                            right: 360px;
                             transform: rotate(270deg);
                             display: flex;
                             flex-direction: column;
                             justify-content: space-around;
 
                             @media(max-width:1199px) {
-                                bottom: 4px;
-                                left: 10px;
+                                top: -250px;
+                                right: 220px;
 
                                 .slot {
                                     margin-bottom: 1.5px;
@@ -538,6 +546,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
 
         span {
             font-size: 11px;
@@ -546,6 +555,10 @@
         &.occupied {
             color: #fff;
             background: #eb0606;
+        }
+
+        &:hover {
+            background: gray;
         }
 
         @media(max-width:1199px) {
